@@ -1,13 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity=
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
 
-    <h1>Bonjour</h1>
-    
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Drissi Mouad</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">
+                              Portfolio
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services">
+                              Projects
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact">
+                              Contact Me
+                          </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Drissi Mouad</h1>
+                <h4 class="sub-heading">
+                    A Software developer and data science student.
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Portfolio</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/web.jpg" 
+                                 alt="Web development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Web development </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/android.jpg" 
+                                 alt="Android Development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Android Development
+                          </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/ios.jpg" alt="IOS development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">IOS development</h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/cross_pl.jpg" 
+                                 alt="cross-platform Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Cross-platform development
+                          </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/danalytic.jpg" 
+                                 alt="Data Analytics Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Data Analytics
+                          </h3>
+                        <p class="small-para blue-text">
+                              Data Science
+                          </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/ia.jpg" 
+                                 alt="artificial intelligence Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Artificial intelligence
+                          </h3>
+                        <p class="small-para blue-text">Artificial intelligence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                I graduated in mobile development at ISTAG BAB TIZIMI and currently studying Data science and artificial intelligence
+            </p>
+            <p>
+                I have experience in mobile development as a trainee in several IT companies 
+            </p>
+        </div>
+        <!-- <div class="about-image">
+            <img src="./Images/pexels-startup-stock-photos-7114.jpg" alt="About Image">
+        </div> -->
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My projects</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">QR Scanner Application</h3>
+                        <p class="small-para">
+                            This application is developed  to scan the BarCode 
+                            of any Wifi and get his SSID and Password, 
+                            furthermore you can easily copy his password 
+                            into the clipBoard, you can also get the 
+                            history of all wifi scanned, in addition 
+                            it is also possible to generate your own QrCode and save it 
+                            as a picture in the Gallery. 
+
+                        </p>
+                        <p class="small-para">
+                          <li>Programmed using : Java</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Shoping web site
+                          </h3>
+                        <p class="small-para">
+                            This is a E-commerce Web site, where you can 
+                            sign up your new account, and login to it at any moment,
+                            you can find a numerous products of all types, shop it, 
+                            also write a comment or a feedback for any product, 
+                            it is also possible to sell product as a seller.     
+                        </p>
+                        <p class="small-para">
+                            <li>Programmed using : HTML, CSS, Bootstrap, JS, PHP</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Pharmacy application</h3>
+                        <p class="small-para">
+                            This application make medicaments possible just online 
+                            to be selled and buyed. It offers two types of users 
+                            pharmacist user and the user who want to buy a medicament,
+                            it is possible to find any medicament just by typing his
+                            name in the research input, and all offers will be showed,
+                            you can after have a contact with the pharmacist to 
+                            discussing about the rest. 
+                            The more special about this application is it a cross-platform
+                            application, it runs at any operating system.       
+                        </p>
+                        <p class="small-para">
+                            <li>Programmed using : Flutter, Laravel</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-regular fa-message"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Chat Application
+                          </h3>
+                        <p class="small-para">
+                           This application offer the possibility to get a 
+                           contact with any one at the same application, 
+                           just after the account creation, you can 
+                           type the user name of the personal account who want you,
+                           if it exist you can directly chat with him, sending messages,
+                           audio, pictures and locations.
+                           This application is also special because it is cross-platform one 
+                           that make it able to run at any operating system.    
+                        </p>
+                        <p class="small-para">
+                            <li>Programmed using : Flutter, Laravel</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                             House Price Prediction model
+                          </h3>
+                        <p class="small-para">
+                            This model is able to predict the price of any house,
+                            just by giving some inputs information, like house space,
+                            and the land space of the house.
+                            The special in this model that the rate error is very low.
+                        </p>
+                        <p class="small-para">
+                            <li>Programmed using : Python</li>
+                            <li>libraries used : Numpy, matplotlib, sklearn, keras</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                                Speech To Text application
+                          </h3>
+                        <p class="small-para">
+                            This application offer the possibility of typing text
+                            just using you voice, first you need to press longly the recording 
+                            button and say what what you want to write, as soon as you 
+                            left the button the recording will be stopped,
+                            and the you text is ready then to copied.
+                        </p>
+                        <p class="small-para">
+                           <li>Programmed using : Java, AXML</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Name">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Email">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Phone">
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">mouaddrissi73@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+212 766911504</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2024 All rights reserved |
+                This portfolio website created 
+                  by DRISSI Mouad.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://github.com/Mouad677">
+                               <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
