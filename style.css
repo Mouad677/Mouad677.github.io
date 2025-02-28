@@ -340,3 +340,8 @@ body {
 .blue-text {
     color: #363D73;
 }
+
+.my-row .my-col:hover{
+    border-bottom: 5px solid #fff9;
+    outline: none;
+}
