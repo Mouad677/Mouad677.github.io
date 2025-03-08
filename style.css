@@ -345,6 +345,7 @@ body {
     border-bottom: 5px solid #fff9;
     outline: none;
 }
+<<<<<<< HEAD
 
 #splash{
     position: absolute;
@@ -370,3 +371,5 @@ input:focus, textarea:focus, select:focus, button:focus {
 
    
   
+=======
+>>>>>>> 79853e20730d9a9ae10edbc8910595a0c6fc7770
