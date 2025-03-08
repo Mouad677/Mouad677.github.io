@@ -15,3 +15,8 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+
+
+setTimeout(function(){
+    document.getElementById("splash").style.display = "none";
+}, 3500);

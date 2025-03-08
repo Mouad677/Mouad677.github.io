@@ -340,3 +340,33 @@ body {
 .blue-text {
     color: #363D73;
 }
+
+.my-row .my-col:hover{
+    border-bottom: 5px solid #fff9;
+    outline: none;
+}
+
+#splash{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("https://media1.tenor.com/m/CzdMW7wnLn8AAAAC/coding.gif")
+}
+
+input ::placeholder{
+    transition: color 0.3s ease;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+    border-color: #35A99C;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+    outline: none;
+  }
+
+   
+  
