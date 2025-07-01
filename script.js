@@ -1,3 +1,27 @@
+// Dark mode functionality
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+if (darkModeToggle) {
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
+
 // Menu toggle
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
@@ -60,4 +84,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             }
         }
     });
+});
+
+// Download Resume Functionality
+document.getElementById('downloadResume').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Create a hidden link to trigger the download
+    const link = document.createElement('a');
+    link.href = 'Drissi_Mouad_CV.pdf'; // Replace with your actual CV file
+    link.download = 'Drissi_Mouad_CV.pdf'; // File name for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Visual feedback
+    const originalText = this.innerHTML;
+    this.innerHTML = '<i class="fas fa-check"></i> Resume Downloaded!';
+    this.classList.add('downloaded');
+    
+    // Reset after 3 seconds
+    setTimeout(() => {
+        this.innerHTML = originalText;
+        this.classList.remove('downloaded');
+    }, 3000);
 });
