@@ -1,27 +1,3 @@
-// Dark mode functionality
-const darkModeToggle = document.getElementById('darkModeToggle');
-
-if (darkModeToggle) {
-    // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-    
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        
-        if (document.body.classList.contains('dark-mode')) {
-            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            localStorage.setItem('theme', 'light');
-        }
-    });
-}
-
 // Menu toggle
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
@@ -31,33 +7,6 @@ if (hamburger) {
         const isExpanded = this.getAttribute('aria-expanded') === 'true';
         this.setAttribute('aria-expanded', !isExpanded);
         menu.classList.toggle('active');
-    });
-}
-
-// Form validation
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Simple validation
-        const inputs = this.querySelectorAll('input, textarea');
-        let isValid = true;
-        
-        inputs.forEach(input => {
-            if (input.required && !input.value.trim()) {
-                isValid = false;
-                input.classList.add('error');
-            } else {
-                input.classList.remove('error');
-            }
-        });
-        
-        if (isValid) {
-            // Form submission logic would go here
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        }
     });
 }
 

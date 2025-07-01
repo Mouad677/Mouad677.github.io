@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="welcome">
+<body>
     <!-- Dark Mode Toggle Button -->
     <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
@@ -248,12 +248,13 @@
         <div class="contact-content">
             <div class="contact-form-container">
                 <h1 class="greet-heading">Get In Touch</h1>
-                <form class="contact-form" id="contactForm">
-                    <input class="form-controls" type="text" placeholder="Your Name" required>
-                    <input class="form-controls" type="email" placeholder="Your Email" required>
-                    <input class="form-controls" type="tel" placeholder="Your Phone">
-                    <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xovwrobr" method="POST">
+                    <input class="form-controls" type="text" name="name" placeholder="Your Name" required>
+                    <input class="form-controls" type="email" name="email" placeholder="Your Email" required>
+                    <input class="form-controls" type="tel" name="phone" placeholder="Your Phone">
+                    <textarea class="form-controls" name="message" placeholder="Write your message" cols="30" rows="10" required></textarea>
                     <button class="form-btn btn common-btn" type="submit">Send Message</button>
+                    <div id="formStatus"></div>
                 </form>
             </div>
             <div class="contact-details">
@@ -309,5 +310,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 </html>
