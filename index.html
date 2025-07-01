@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- <div id="splash"></div> -->
+
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-          
-    <title>My Portfolio</title>
-    <!-- <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity=
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-             crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" 
-          href="/Mouad677.github.io/all.min.css"
-          integrity=
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="loader.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drissi Mouad - Software Developer & Data Science Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    
 </head>
 
 <body class="welcome">
-    <span id="splash-overlay" class="splash"></span>
-    <span id="welcome" class="z-depth-4"></span>
     <!-- Navbar header section -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
                 <h2 class="logo-heading">Drissi Mouad</h2>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
+
+            <div class="nav-controls">
+
+                <div class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-list-items">
-                        <a class="links" href="#home">
-                              Home
-                          </a>
+                        <a class="links" href="#home">Home</a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                              Portfolio
-                          </a>
+                        <a class="links" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#about">
-                              About
-                          </a>
+                        <a class="links" href="#about">About</a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#services">
-                              Projects
-                          </a>
+                        <a class="links" href="#services">Projects</a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#contact">
-                              Contact Me
-                          </a>
+                        <a class="links" href="#contact">Contact</a>
                     </li>
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </ul>
             </div>
         </nav>
@@ -81,8 +62,8 @@
                 </h4>
             </div>
             <div class="intro-buttons">
-                <button class="btn common-btn">Hire Me</button>
-                <button class="btn ghost-btn">Get Resume</button>
+                <a href="#contact" class="btn common-btn">Hire Me</a>
+                <a href="#" class="btn ghost-btn">Download Resume</a>
             </div>
         </div>
     </section>
@@ -97,31 +78,31 @@
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/web.jpg" 
-                                 alt="Web development Image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                                alt="Web Development">
                         </div>
-                        <h3 class="greet-heading blue-text">Web development </h3>
+                        <h3 class="greet-heading blue-text">Web Development</h3>
                         <p class="small-para blue-text">Development</p>
                     </div>
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/android.jpg" 
-                                 alt="Android Development Image">
+                            <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                                alt="Android Development">
                         </div>
-                        <h3 class="greet-heading blue-text">
-                              Android Development
-                          </h3>
+                        <h3 class="greet-heading blue-text">Android Development</h3>
                         <p class="small-para blue-text">Development</p>
                     </div>
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/ios.jpg" alt="IOS development Image">
+                            <!-- Changer l'image pour iOS -->
+                            <img src="https://images.unsplash.com/photo-1654604465892-5cbd95617c71?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="iOS Development">
                         </div>
-                        <h3 class="greet-heading blue-text">IOS development</h3>
+                        <h3 class="greet-heading blue-text">iOS Development</h3>
                         <p class="small-para blue-text">Development</p>
                     </div>
                 </div>
@@ -130,39 +111,32 @@
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/cross_pl.jpg" 
-                                 alt="cross-platform Image">
+                            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                                alt="Cross-platform Development">
                         </div>
-                        <h3 class="greet-heading blue-text">
-                            Cross-platform development
-                          </h3>
+                        <h3 class="greet-heading blue-text">Cross-platform Development</h3>
                         <p class="small-para blue-text">Development</p>
                     </div>
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/danalytic.jpg" 
-                                 alt="Data Analytics Image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                                alt="Data Analytics">
                         </div>
-                        <h3 class="greet-heading blue-text">
-                              Data Analytics
-                          </h3>
-                        <p class="small-para blue-text">
-                              Data Science
-                          </p>
+                        <h3 class="greet-heading blue-text">Data Analytics</h3>
+                        <p class="small-para blue-text">Data Science</p>
                     </div>
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
                         <div class="image">
-                            <img src="./Images/ia.jpg" 
-                                 alt="artificial intelligence Image">
+                            <!-- Changer l'image pour AI -->
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDl6xPdbAgz5B5HA_Di6Wp7DTSkThrDgKZLUDv_asRCZpHKYsG74YeAOH977tY"
+                                alt="Artificial Intelligence">
                         </div>
-                        <h3 class="greet-heading blue-text">
-                            Artificial intelligence
-                          </h3>
-                        <p class="small-para blue-text">Artificial intelligence</p>
+                        <h3 class="greet-heading blue-text">Artificial Intelligence</h3>
+                        <p class="small-para blue-text">AI</p>
                     </div>
                 </div>
             </div>
@@ -174,21 +148,19 @@
         <div class="about-text">
             <h1 class="my-heading">About Me</h1>
             <p class="lead-para">
-                I graduated in mobile development at ISTAG BAB TIZIMI and currently studying Data science and artificial intelligence
+                I graduated in mobile development at ISTAG BAB TIZIMI and currently studying Data science and artificial
+                intelligence.
             </p>
             <p>
-                I have experience in mobile development as a trainee in several IT companies 
+                I have experience in mobile development as a trainee in several IT companies.
             </p>
         </div>
-        <!-- <div class="about-image">
-            <img src="./Images/pexels-startup-stock-photos-7114.jpg" alt="About Image">
-        </div> -->
     </section>
 
-    <!-- Services Section -->
+    <!-- Projects Section -->
     <section class="services" id="services">
         <div class="services-heading">
-            <h1 class="my-heading text-center">My projects</h1>
+            <h1 class="my-heading text-center">My Projects</h1>
         </div>
         <div class="services-content">
             <div class="my-row">
@@ -199,18 +171,12 @@
                         </div>
                         <h3 class="greet-heading blue-text">QR Scanner Application</h3>
                         <p class="small-para">
-                            This application is developed  to scan the BarCode 
-                            of any Wifi and get his SSID and Password, 
-                            furthermore you can easily copy his password 
-                            into the clipBoard, you can also get the 
-                            history of all wifi scanned, in addition 
-                            it is also possible to generate your own QrCode and save it 
-                            as a picture in the Gallery. 
-                            <br> <br> <br> <br> <br> <br>
-                        
+                            "Mobile application designed to scan WiFi QR codes for instant network authentication.
+                            Streamlines secure connectivity in professional environments by automatically retrieving and
+                            configuring network credentials."
                         </p>
                         <p class="small-para">
-                          <li>Programmed using : Java</li>
+                            <strong>Technologies:</strong> Java
                         </p>
                     </div>
                 </div>
@@ -219,19 +185,14 @@
                         <div class="icon">
                             <i class="fa-solid fa-shop"></i>
                         </div>
-                        <h3 class="greet-heading blue-text">
-                              Shoping web site
-                          </h3>
+                        <h3 class="greet-heading blue-text">E-commerce Website</h3>
                         <p class="small-para">
-                            This is a E-commerce Web site, where you can 
-                            sign up your new account, and login to it at any moment,
-                            you can find a numerous products of all types, shop it, 
-                            also write a comment or a feedback for any product, 
-                            it is also possible to sell product as a seller.     
-                            <br> <br> <br> <br> <br> <br>
+                            "Full-featured e-commerce platform with user authentication, dynamic product catalog, and
+                            secure payment processing. Implements cart persistence, order tracking, and responsive
+                            design for optimal cross-device user experience."
                         </p>
                         <p class="small-para">
-                            <li>Programmed using : HTML, CSS, Bootstrap, JS, PHP</li>
+                            <strong>Technologies:</strong> HTML, CSS, Bootstrap, JS, PHP
                         </p>
                     </div>
                 </div>
@@ -240,21 +201,14 @@
                         <div class="icon">
                             <i class="fa-solid fa-prescription-bottle-medical"></i>
                         </div>
-                        <h3 class="greet-heading blue-text">Pharmacy application</h3>
+                        <h3 class="greet-heading blue-text">Pharmacy Application</h3>
                         <p class="small-para">
-                            This application make medicaments possible just online 
-                            to be selled and buyed. It offers two types of users 
-                            pharmacist user and the user who want to buy a medicament,
-                            it is possible to find any medicament just by typing his
-                            name in the research input, and all offers will be showed,
-                            you can after have a contact with the pharmacist to 
-                            discussing about the rest. 
-                            The more special about this application is it a cross-platform
-                            application, it runs at any operating system.
-                            <br> <br>       
+                            "Digital solution for pharmaceutical management enabling online medication sales,
+                            prescription tracking, and inventory control. Features regulatory compliance tools and
+                            real-time stock monitoring for pharmacy operations."
                         </p>
                         <p class="small-para">
-                            <li>Programmed using : Flutter, Laravel</li>
+                            <strong>Technologies:</strong> Flutter, Laravel
                         </p>
                     </div>
                 </div>
@@ -265,21 +219,14 @@
                         <div class="icon">
                             <i class="fa-regular fa-message"></i>
                         </div>
-                        <h3 class="greet-heading blue-text">
-                              Chat Application
-                          </h3>
+                        <h3 class="greet-heading blue-text">Chat Application</h3>
                         <p class="small-para">
-                           This application offer the possibility to get a 
-                           contact with any one at the same application, 
-                           just after the account creation, you can 
-                           type the user name of the personal account who want you,
-                           if it exist you can directly chat with him, sending messages,
-                           audio, pictures and locations.
-                           This application is also special because it is cross-platform one 
-                           that make it able to run at any operating system.    
+                            "Real-time messaging platform with end-to-end encryption for secure communication. Supports
+                            individual/group chats, file sharing, and push notifications with cloud-based message
+                            synchronization."
                         </p>
                         <p class="small-para">
-                            <li>Programmed using : Flutter, Laravel</li>
+                            <strong>Technologies:</strong> Flutter, Laravel
                         </p>
                     </div>
                 </div>
@@ -288,39 +235,30 @@
                         <div class="icon">
                             <i class="fa-solid fa-house-chimney-window"></i>
                         </div>
-                        <h3 class="greet-heading blue-text">
-                             House Price Prediction model
-                          </h3>
+                        <h3 class="greet-heading blue-text">House Price Prediction Model</h3>
                         <p class="small-para">
-                            This model is able to predict the price of any house,
-                            just by giving some inputs information, like house space,
-                            and the land space of the house.
-                            The special in this model that the rate error is very low.
+                            "Machine learning model leveraging regression algorithms to estimate real estate values.
+                            Processes multiple property features including location, size, and amenities to generate
+                            accurate market valuations."
                         </p>
                         <p class="small-para">
-                            <li>Programmed using : Python</li>
-                            <li>libraries used : Numpy, matplotlib, sklearn, keras</li>
+                            <strong>Technologies:</strong> Python, Numpy, matplotlib, sklearn, keras
                         </p>
                     </div>
                 </div>
                 <div class="my-col">
                     <div class="my-card">
                         <div class="icon">
-                            <i class="fa-solid fa-microphone-lines"></i>
+                            <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <h3 class="greet-heading blue-text">
-                                Speech To Text application
-                          </h3>
+                        <h3 class="greet-heading blue-text">Grade Management System</h3>
                         <p class="small-para">
-                            This application offer the possibility of typing text
-                            just using you voice, first you need to press longly the recording 
-                            button and say what what you want to write, as soon as you 
-                            left the button the recording will be stopped,
-                            and the you text is ready then to copied.
-                            <br> <br>  <br> <br>
+                            "Academic performance tracking platform for educational institutions. Enables instructors to
+                            record, analyze, and report student grades while providing students with performance
+                            analytics and progress dashboards."
                         </p>
                         <p class="small-para">
-                           <li>Programmed using : Java, AXML</li>
+                            <strong>Technologies:</strong> Java, AXML
                         </p>
                     </div>
                 </div>
@@ -328,7 +266,7 @@
         </div>
     </section>
 
-    <!-- Contact me section -->
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-heading">
             <h1 class="my-heading text-center">Contact Me</h1>
@@ -336,20 +274,13 @@
         <div class="contact-content">
             <div class="contact-form-container">
                 <h1 class="greet-heading">Get In Touch</h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Name">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Email">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Phone">
-                    <textarea class="form-controls" 
-                              placeholder="Write your message" 
-                              name="message" id="" cols="30"
-                              rows="10">
-                      </textarea>
-                    <input class="form-btn btn common-btn" 
-                           type="submit" value="Send Message">
+                <form class="contact-form" id="contactForm">
+                    <input class="form-controls" type="text" placeholder="Your Name" required>
+                    <input class="form-controls" type="email" placeholder="Your Email" required>
+                    <input class="form-controls" type="tel" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10"
+                        required></textarea>
+                    <button class="form-btn btn common-btn" type="submit">Send Message</button>
                 </form>
             </div>
             <div class="contact-details">
@@ -362,6 +293,18 @@
                     <h5 class="contact-heading">PHONE</h5>
                     <p class="contact-text">+212 766911504</p>
                 </div>
+                <div class="details">
+                    <h5 class="contact-heading">SOCIAL MEDIA</h5>
+                    <div class="social-links">
+                        <a href="https://github.com/Mouad677" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mouad-drissi-4b4026227/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -371,19 +314,20 @@
         <div class="footer-content text-center">
             <h4>
                 Copyright © 2024 All rights reserved |
-                This portfolio website created 
-                  by DRISSI Mouad.
+                This portfolio website created by DRISSI Mouad.
             </h4>
             <div class="social-links">
                 <div class="footer-menu">
                     <ul class="footer-menu-list">
                         <li class="footer-list-items">
-                            <a class="footer-links" href="https://github.com/Mouad677">
-                               <i class="fa-brands fa-github"></i>
+                            <a class="footer-links" href="https://github.com/Mouad677" target="_blank" rel="noopener"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li class="footer-list-items">
-                            <a class="footer-links" href="#">
+                            <a class="footer-links" href="https://www.linkedin.com/in/mouad-drissi-4b4026227/"
+                                target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -393,14 +337,9 @@
         </div>
     </footer>
 
-    
-
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity=
-"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
 </body>
 
+</html>

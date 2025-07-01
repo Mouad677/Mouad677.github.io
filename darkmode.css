@@ -1,0 +1,41 @@
+        :root {
+            --primary: #35A99C;
+            --secondary: #363D73;
+            --light: #74D7BB;
+            --dark: #2794B3;
+            --text: #333;
+            --background: #fff;
+            --card-bg: #f8f9fa;
+        }
+        
+        .dark-mode {
+            --text: #f0f0f0;
+            --background: #121212;
+            --card-bg: #1e1e1e;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .header {
+            background-image: linear-gradient(90deg, var(--light), var(--primary), var(--dark));
+        }
+        
+        .my-card {
+            background-color: var(--card-bg);
+        }
+        
+        .dark-mode-toggle {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 100;
+        }

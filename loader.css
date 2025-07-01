@@ -108,7 +108,7 @@ body {
   
   @keyframes moveUp {
     0% {
-      background: #311b92;
+      background: #35A99C;
       top: 100%;
     }
     50% {
@@ -116,7 +116,7 @@ body {
     }
     100% {
       top: 50%;
-      background: #039be5;
+      background: #35A99C;
     }
   }
   
